@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>final</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="jumbotron">
+    <h1>Here is your wish list..</h1><br>
+    <div class="container">
+    {% for i in items %}
+        {{i.id}}
+        {{i.product_name}}
+        {{i.date}}
+        <br><br>
+    {% endfor%}
+    </div>
+<br>
+<a href="/wishform">GoBackToWishForm</a>
+<br><br>
+<a href="/">GoBackToItem</a>
+</div>
+
+</body>
+</html>

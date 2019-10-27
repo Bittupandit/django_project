@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>item</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="jumbotron">
+    <h1>Here is the Items..</h1><br>
+    <div class="container">
+        {%for item in dataitem%}
+        {{item.id}}
+        {{item.name}}<br><br>
+<!--        <a href="ss/{{Product.id}}">add</a>-->
+        {%endfor%}
+
+    </div>
+    <a href="/form">AddItemPage</a><br><br>
+    <a href="/wishform">GoAddWish</a><br><br>
+    <a href="/ss">GoToWishList</a>
+
+</div>
+</body>
+</html>
